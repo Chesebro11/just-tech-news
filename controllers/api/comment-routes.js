@@ -3,7 +3,7 @@ const { Comment } = require('../../models');
 
 router.get('/', (req, res) => {
     Comment.findAll({
-        attribues: [
+        attributes: [
             'id',
             'post_id',
             'comment_text',
